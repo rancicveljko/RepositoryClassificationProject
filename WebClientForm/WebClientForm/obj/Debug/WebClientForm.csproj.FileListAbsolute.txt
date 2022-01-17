@@ -1,0 +1,10 @@
+C:\Users\wexla\source\repos\WebClientForm\WebClientForm\bin\Debug\WebClientForm.exe.config
+C:\Users\wexla\source\repos\WebClientForm\WebClientForm\bin\Debug\WebClientForm.exe
+C:\Users\wexla\source\repos\WebClientForm\WebClientForm\bin\Debug\WebClientForm.pdb
+C:\Users\wexla\source\repos\WebClientForm\WebClientForm\obj\Debug\WebClientForm.csproj.AssemblyReference.cache
+C:\Users\wexla\source\repos\WebClientForm\WebClientForm\obj\Debug\WebClientForm.Form1.resources
+C:\Users\wexla\source\repos\WebClientForm\WebClientForm\obj\Debug\WebClientForm.Properties.Resources.resources
+C:\Users\wexla\source\repos\WebClientForm\WebClientForm\obj\Debug\WebClientForm.csproj.GenerateResource.cache
+C:\Users\wexla\source\repos\WebClientForm\WebClientForm\obj\Debug\WebClientForm.csproj.CoreCompileInputs.cache
+C:\Users\wexla\source\repos\WebClientForm\WebClientForm\obj\Debug\WebClientForm.exe
+C:\Users\wexla\source\repos\WebClientForm\WebClientForm\obj\Debug\WebClientForm.pdb
