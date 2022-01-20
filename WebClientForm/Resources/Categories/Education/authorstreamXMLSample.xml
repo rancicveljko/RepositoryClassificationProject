@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Presentations>
+	<Presentation>
+		<PresentationID>1</PresentationID>
+		<Title>Education presentation</Title>
+		<Description/>
+		<CreatedDateTime>06/21/2009 23:39:08</CreatedDateTime>
+		<ThumbnailURL>http:// www.authorstream.com/Content/1_633631008836718750-118_88.jpg/</ThumbnailURL>
+		<Embed>
+			<object width="481" height="402" id="player">
+				<param name="movie" value="http://www.authorstream.com /player.swf?p=109283_633625717514795000"/>
+				<param name="allowfullscreen" value="true"/>
+				<param name="allowScriptAccess" value="always"/>
+				<embed src="http://www.authorstream.com/ player.swf?p=109283_633625717514795000"
+				type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="481" height="402"/>
+			</object>
+		</Embed>
+		<PresentationURL>http://www.authorstream.com/Presentation/testuser-1-test-entertainment-ppt-powerpoint </PresentationURL>
+		<PresentationViews>0</PresentationViews>
+		<Category>Entertainment</Category>
+		<Tags>funny</Tags>
+	</Presentation>
+</Presentations>

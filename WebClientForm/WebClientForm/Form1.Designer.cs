@@ -29,17 +29,10 @@ namespace WebClientForm
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbURI = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSendCall = new System.Windows.Forms.Button();
+            this.cbApiUri = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
-            // 
-            // tbURI
-            // 
-            this.tbURI.Location = new System.Drawing.Point(163, 12);
-            this.tbURI.Name = "tbURI";
-            this.tbURI.Size = new System.Drawing.Size(625, 22);
-            this.tbURI.TabIndex = 0;
             // 
             // label1
             // 
@@ -60,14 +53,23 @@ namespace WebClientForm
             this.btnSendCall.UseVisualStyleBackColor = true;
             this.btnSendCall.Click += new System.EventHandler(this.btnSendCall_Click);
             // 
+            // cbApiUri
+            // 
+            this.cbApiUri.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbApiUri.FormattingEnabled = true;
+            this.cbApiUri.Location = new System.Drawing.Point(129, 14);
+            this.cbApiUri.Name = "cbApiUri";
+            this.cbApiUri.Size = new System.Drawing.Size(659, 24);
+            this.cbApiUri.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbApiUri);
             this.Controls.Add(this.btnSendCall);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tbURI);
             this.Name = "Form1";
             this.Text = "Web Client";
             this.ResumeLayout(false);
@@ -76,10 +78,9 @@ namespace WebClientForm
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox tbURI;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSendCall;
+        private System.Windows.Forms.ComboBox cbApiUri;
     }
 }
 

@@ -8,3 +8,13 @@ C:\Users\wexla\source\repos\WebClientForm\WebClientForm\obj\Debug\WebClientForm.
 C:\Users\wexla\source\repos\WebClientForm\WebClientForm\obj\Debug\WebClientForm.csproj.CoreCompileInputs.cache
 C:\Users\wexla\source\repos\WebClientForm\WebClientForm\obj\Debug\WebClientForm.exe
 C:\Users\wexla\source\repos\WebClientForm\WebClientForm\obj\Debug\WebClientForm.pdb
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\bin\Debug\WebClientForm.exe.config
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\bin\Debug\WebClientForm.exe
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\bin\Debug\WebClientForm.pdb
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\obj\Debug\WebClientForm.csproj.AssemblyReference.cache
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\obj\Debug\WebClientForm.Form1.resources
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\obj\Debug\WebClientForm.Properties.Resources.resources
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\obj\Debug\WebClientForm.csproj.GenerateResource.cache
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\obj\Debug\WebClientForm.csproj.CoreCompileInputs.cache
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\obj\Debug\WebClientForm.exe
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\obj\Debug\WebClientForm.pdb

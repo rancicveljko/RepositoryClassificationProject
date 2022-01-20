@@ -38,12 +38,14 @@ namespace XmlAnalizer
             // 
             // btnChooseFile
             // 
+            this.btnChooseFile.Enabled = false;
             this.btnChooseFile.Location = new System.Drawing.Point(598, 19);
             this.btnChooseFile.Name = "btnChooseFile";
             this.btnChooseFile.Size = new System.Drawing.Size(122, 29);
             this.btnChooseFile.TabIndex = 0;
             this.btnChooseFile.Text = "Choose a file";
             this.btnChooseFile.UseVisualStyleBackColor = true;
+            this.btnChooseFile.Click += new System.EventHandler(this.btnChooseFile_Click);
             // 
             // openFileDialog
             // 

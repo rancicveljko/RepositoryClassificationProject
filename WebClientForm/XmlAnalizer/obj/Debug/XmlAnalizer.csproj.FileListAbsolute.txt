@@ -1,0 +1,10 @@
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\bin\Debug\XmlAnalizer.exe.config
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\bin\Debug\XmlAnalizer.exe
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\bin\Debug\XmlAnalizer.pdb
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\obj\Debug\XmlAnalizer.csproj.AssemblyReference.cache
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\obj\Debug\XmlAnalizer.frmXmlAnalizer.resources
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\obj\Debug\XmlAnalizer.Properties.Resources.resources
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\obj\Debug\XmlAnalizer.csproj.GenerateResource.cache
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\obj\Debug\XmlAnalizer.csproj.CoreCompileInputs.cache
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\obj\Debug\XmlAnalizer.exe
+E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\obj\Debug\XmlAnalizer.pdb
