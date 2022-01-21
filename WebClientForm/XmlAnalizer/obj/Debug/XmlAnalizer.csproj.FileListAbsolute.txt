@@ -8,3 +8,13 @@ E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozito
 E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\obj\Debug\XmlAnalizer.csproj.CoreCompileInputs.cache
 E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\obj\Debug\XmlAnalizer.exe
 E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\obj\Debug\XmlAnalizer.pdb
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\bin\Debug\XmlAnalizer.exe.config
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\bin\Debug\XmlAnalizer.exe
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\bin\Debug\XmlAnalizer.pdb
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\obj\Debug\XmlAnalizer.csproj.AssemblyReference.cache
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\obj\Debug\XmlAnalizer.frmXmlAnalizer.resources
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\obj\Debug\XmlAnalizer.Properties.Resources.resources
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\obj\Debug\XmlAnalizer.csproj.GenerateResource.cache
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\obj\Debug\XmlAnalizer.csproj.CoreCompileInputs.cache
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\obj\Debug\XmlAnalizer.exe
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\XmlAnalizer\obj\Debug\XmlAnalizer.pdb
