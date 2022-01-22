@@ -18,3 +18,13 @@ E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozito
 E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\obj\Debug\WebClientForm.csproj.CoreCompileInputs.cache
 E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\obj\Debug\WebClientForm.exe
 E:\Rabote za fax\IV\TZPU\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\obj\Debug\WebClientForm.pdb
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\bin\Debug\WebClientForm.exe.config
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\bin\Debug\WebClientForm.exe
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\bin\Debug\WebClientForm.pdb
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\obj\Debug\WebClientForm.csproj.AssemblyReference.cache
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\obj\Debug\WebClientForm.Form1.resources
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\obj\Debug\WebClientForm.Properties.Resources.resources
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\obj\Debug\WebClientForm.csproj.GenerateResource.cache
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\obj\Debug\WebClientForm.csproj.CoreCompileInputs.cache
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\obj\Debug\WebClientForm.exe
+C:\Users\AleksandarKrstic\Desktop\git\2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma\WebClientForm\WebClientForm\obj\Debug\WebClientForm.pdb
