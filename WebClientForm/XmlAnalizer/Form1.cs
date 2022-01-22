@@ -9,73 +9,176 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Xml.Linq;
 
 namespace XmlAnalizer
 {
     public partial class frmXmlAnalizer : Form
     {
-        string[] categories = { "Education", "Science", "Math" };//dopuni
+        string[] categoriesString = { "Education", "Science", "Math" };//dopuni
         string[] xmlAttrNames = { "Category", "Tags", "Title", "Description" };
+        List<string> categories;
         
-        string inputFileFullPath = @"E:\Rabote za fax\IV\TZPU\authorstreamXMLSample.xml";
+        string inputFileFullPath = "";
         string outputBaseFolderPath = @"..\..\..\Resources\Categories\";
         string inputFolderPath= @"..\..\..\Resources\UnprocessedXMLs";
         public frmXmlAnalizer()
         {
             InitializeComponent();
+            openFileDialog.InitialDirectory = inputFolderPath;
+            categories = categoriesString.ToList();
         }
 
         // prodji kroz https://docs.microsoft.com/en-us/dotnet/api/system.xml.serialization.xmlserializer?view=net-6.0
         private void btnCategorize_Click(object sender, EventArgs e)
         {
-            var currSearchedAttrName = xmlAttrNames[0];
-
-            XmlDocument doc = new XmlDocument();
-            doc.Load(inputFileFullPath);
-
-            XmlNode root = doc.ChildNodes[1];//<Presentations>
-            var currNode = root.FirstChild;//<Presentation>
-            var children = currNode.ChildNodes;
-            
-            //MOZE DA SE OBRADJUJE KAO STABLO
-            //A NE KAO MATRICA
-            foreach (XmlNode child in children) // iterate through all childer in depth 2
+            try
             {
-                foreach (var attrName in xmlAttrNames) // check if child contains any of searched for elements
+                XElement fullXmlFile = XElement.Load(inputFileFullPath);
+
+                IEnumerable<XElement> presentations = from pres in fullXmlFile.Descendants()
+                                                      select pres;
+
+                foreach (var pres in presentations)
                 {
-                    if (child.Name == attrName) // if it does
+                    bool categorized = false;
+                    foreach (var attr in xmlAttrNames)
                     {
-                        foreach (var item in categories) // check if its value contains any of searched words
+                        if (pres.Element(attr) == null)
+                            continue;
+                        foreach (var category in categories)
                         {
-                            if (child.InnerText.Contains(item)) // if it does, categorize it
+                            if (pres.Element(attr).Value.Contains(category))
                             {
                                 // add presentation to category
-                                
-                                string fullFolderPath = outputBaseFolderPath + item;
-                                Directory.CreateDirectory(fullFolderPath);
+                                // which means
+                                // take XElement and make it into a separate xml file
 
-                                var filename = inputFileFullPath.Split('\\').Last();
-                                var outputFileFullPath = fullFolderPath + "\\" + filename;
-                                
-                                File.Copy(inputFileFullPath, outputFileFullPath);
+                                Categorize(pres, category);
+
+                                //string fileName = pres.Element("Title").Value;
+                                //string outputFolderPath = Path.Combine(outputBaseFolderPath, category);
+                                //string outputFilePathFull = Path.Combine(outputFolderPath, fileName);
+
+                                //Directory.CreateDirectory(outputFolderPath);
+
+                                //pres.Save(outputFilePathFull);
+
+                                categorized = true;
                             }
                         }
                     }
+
+                    if (categorized == false && pres.Element("Category") != null)
+                    {
+                        categories.Add(pres.Element("Category").Value);
+                        Categorize(pres, pres.Element("Category").Value);
+                    }
                 }
-                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
 
 
-            
+
+
         }
 
         private void btnChooseFile_Click(object sender, EventArgs e)
         {
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                inputFileFullPath = openFileDialog.SafeFileName;
+                inputFileFullPath = openFileDialog.FileName;
                 tbFilePath.Text = inputFileFullPath;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                XElement fullXmlFile = XElement.Load(inputFileFullPath);
+
+                IEnumerable<XElement> presentations = from pres in fullXmlFile.Descendants()
+                                                      select pres;
+                
+                foreach (var pres in presentations)
+                {
+                    bool categorized = false;
+                    foreach (var attr in xmlAttrNames)
+                    {
+                        if (pres.Element(attr) == null)
+                            continue;
+                        foreach (var category in categories)
+                        {
+                            if(pres.Element(attr).Value.Contains(category))
+                            {
+                                // add presentation to category
+                                // which means
+                                // take XElement and make it into a separate xml file
+
+                                Categorize(pres, category);
+
+                                //string fileName = pres.Element("Title").Value;
+                                //string outputFolderPath = Path.Combine(outputBaseFolderPath, category);
+                                //string outputFilePathFull = Path.Combine(outputFolderPath, fileName);
+
+                                //Directory.CreateDirectory(outputFolderPath);
+
+                                //pres.Save(outputFilePathFull);
+                                
+                                categorized = true;
+                            }
+                        }
+                    }
+
+                    if (categorized == false && pres.Element("Category") != null)
+                    {
+                        categories.Add(pres.Element("Category").Value);
+                        Categorize(pres, pres.Element("Category").Value);
+                    }
+                }
+
+                MessageBox.Show("Kategorizacija gotova! Pogledajte Categories folder.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+        private void Categorize(XElement elem, string category)
+        {
+            string fileName = elem.Element("Title").Value;
+            fileName = ValidateFileName(fileName);
+            string outputFolderPath = Path.Combine(outputBaseFolderPath, category);
+            string outputFilePathFull = Path.Combine(outputFolderPath, fileName); // NE MOZE | u filename nadji zamenu
+
+            Directory.CreateDirectory(outputFolderPath);
+
+            elem.Save(outputFilePathFull);
+        }
+
+        private string ValidateFileName(string filename)
+        {
+            char[] illegalChars = { '|', '<', '>', ':', '"', '/', '\\', '?', '*' };
+            foreach (var illChar in illegalChars)
+            {
+                if(filename.Contains(illChar))
+                {
+                    filename = filename.Replace(illChar, '_');
+                }
+            }
+            return filename;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string fileName = "File name | nesto drugo";
+            fileName = ValidateFileName(fileName);
+            MessageBox.Show(fileName);
         }
     }
 }
