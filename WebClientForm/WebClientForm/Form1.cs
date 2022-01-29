@@ -16,7 +16,9 @@ namespace WebClientForm
     {
         static HttpClient client;
         string responseBody = "";
-        string outputXml = @"C:\Users\AleksandarKrstic\Desktop\17382veljkorancic-2021-la-1-klasifikacija-prezentacija-iz-javnih-repozitorijuma-b955e2b6f165\WebClientForm\Resources\UnprocessedXMLs";
+        string outputXml = @"..\..\..\Resources\UnprocessedXMLs";
+        string apiUri = "";
+        string outputFileName = "";
         public Form1()
         {
             InitializeComponent();
@@ -26,31 +28,42 @@ namespace WebClientForm
         private async void btnSendCall_Click(object sender, EventArgs e)
         {
 
-            //PRIMER
             // Objasnjeno na https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-6.0
 
             // Call asynchronous network methods in a try/catch block to handle exceptions.
             try
             {
-               
-                    HttpResponseMessage response = await client.GetAsync("http://api.authorstream.com/GetTagBasedPresentations.ashx?UserName=veljko.rancic@elfak.rs&Password=!Nesto123&DeveloperKey=qSsHNAgz/v0=&Tag=funny");
-                    response.EnsureSuccessStatusCode();
-                    responseBody = await response.Content.ReadAsStringAsync();
-       
+
+                HttpResponseMessage response = await client.GetAsync(apiUri);
+                response.EnsureSuccessStatusCode();
+                responseBody = await response.Content.ReadAsStringAsync();
+
             }
             catch (HttpRequestException ex)
             {
                 MessageBox.Show(ex.Message);
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             finally
             {
-                StreamWriter file = new StreamWriter(outputXml + @"\Motors.xml", append: true);
-                await file.WriteLineAsync(responseBody);
+                File.WriteAllText(outputXml + '\\' + outputFileName + ".xml", responseBody);
+                //StreamWriter file = new StreamWriter(outputXml + '\\' + outputFileName + ".xml", append: true);
+                //await file.WriteAsync(responseBody);
                 MessageBox.Show("Success", "WARNING");
-
             }
         }
 
+        private void cbApiUri_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            apiUri = cbApiUri.SelectedItem.ToString();
+        }
 
+        private void tbFileName_TextChanged(object sender, EventArgs e)
+        {
+            outputFileName = tbFileName.Text;
+        }
     }
 }

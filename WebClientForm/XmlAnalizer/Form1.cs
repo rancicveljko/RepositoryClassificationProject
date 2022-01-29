@@ -153,6 +153,8 @@ namespace XmlAnalizer
         {
             string fileName = elem.Element("Title").Value;
             fileName = ValidateFileName(fileName);
+            fileName += ".xml";
+
             string outputFolderPath = Path.Combine(outputBaseFolderPath, category);
             string outputFilePathFull = Path.Combine(outputFolderPath, fileName); // NE MOZE | u filename nadji zamenu
 
